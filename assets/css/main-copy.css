@@ -1,0 +1,842 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* DESCRIPTION CSS */
+.description-head-title {
+  text-align: center;
+  font-size:calc(1.375rem + 1.5vw)!important;
+}
+
+.description-img-1 {
+  width: 111rem;
+}
+.description-title-img-1 {
+  transform: rotate(90deg);
+  font-size:calc(1.375rem + 1.5vw)!important;
+  top: 14%;
+  left: 95%;
+}
+
+.description-title-img-2 {
+  transform: rotate(90deg);
+  top: 15%!important;
+  left: -27%!important;
+
+  margin-right: auto;
+
+  font-size:calc(1.375rem + 1.6vw)!important;
+}
+
+.description-linear-1 {
+  position: absolute;
+  width: 55%;
+  height: 65%;
+  top: -20%!important;
+  left: 70%!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-left: 0 ;
+}
+
+.description-linear-2,
+.description-linear-3 {
+  position: absolute;
+  height: 3%;
+
+  left: 124.8%!important;
+
+  border: 2px solid #000000;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0 ;
+
+}
+
+.description-linear-2 {
+  top: 47%!important;
+}
+
+.description-linear-3 {
+  top: 52%!important;
+}
+
+.description-linear-4 {
+  position: absolute;
+  width: 37%;
+  height: 60%;
+
+  top: -20%!important;
+  left: -29%!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.description-linear-5,
+.description-linear-6 {
+  position: absolute;
+  width: 3%;
+  top: -20%!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-left: 0 ;
+  border-right: 0;
+}
+
+.description-linear-5 {
+  left: 8%;
+}
+
+.description-linear-6 {  
+  left: 12%;
+}
+.description-square-1 {
+  width: 22%;
+  height: 60%;
+  top: -10%!important;
+  left: 81%!important;
+
+  background: rgba(111, 73, 162, 0.36);
+}
+
+.description-square-2 {
+  width: 35%;
+  height: 13%;
+
+  top: 92%!important;
+
+  background: rgba(221, 25, 83, 0.2);
+}
+
+.description-square-3 {
+  width: 20%;
+  height: 25%;
+  top: -12%!important;
+  left: 80%!important;
+
+  background: rgba(221, 25, 83, 0.2);
+}
+
+.description-square-4 {
+  width: 40%;
+  height: 20%;
+  top: 88%!important;
+  left: -6%!important;
+
+  background: rgba(111, 73, 162, 0.36);
+}
+.description-text-1,
+.description-text-2 { 
+  font-size: calc(0.2rem + 1vw)!important;
+}
+
+.description-text-1 {
+  margin-left: 20%;
+  margin-right: 13%;
+}
+
+.description-text-2 {
+  margin-left: 13%;
+  margin-right: 20%;
+}
+
+.description-text-vertical {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+/* DESCRIPTION CSS END */
+
+/* WALL OF TEMPLE CSS */
+
+.description-head-title-2 {
+  text-align: center;
+  font-size: calc(1.375rem + 1vw);
+  font-weight: bold;
+  margin-top: 8%; 
+  margin-bottom: 0;
+  padding: 3%; 
+  color: white; 
+  filter: grayscale(10%);
+  background-image: url('../img/wall-of-temple-bg.png');
+}
+
+.description-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.description-grid-item-1,
+.description-grid-item-4,
+.description-grid-item-5,
+.description-grid-item-6 {
+  width: 26rem;
+  height: 26rem;
+  background: rgba(221, 25, 83, 0.5);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.description-grid-item-1::before,
+.description-grid-item-4::before,
+.description-grid-item-5::before,
+.description-grid-item-6::before {
+  content: "";
+  position: absolute;
+  border-radius: 2%;
+  width: 26rem;
+  height: 26rem;
+  transition: all .5s;
+  z-index: 1;
+  background-size: cover;
+}
+
+.description-grid-item-1::before {
+  background-image: url('../img/wall-grid-4.png');
+}
+
+.description-grid-item-4::before {
+  background-image: url('../img/wall-grid-4.png');
+}
+
+.description-grid-item-5::before {
+  background-image: url('../img/wall-grid-5.png');
+}
+
+.description-grid-item-6::before {
+  background-image: url('../img/wall-grid-6.png');
+}
+
+.description-grid-item-1:hover::before,
+.description-grid-item-4:hover::before,
+.description-grid-item-5:hover::before,
+.description-grid-item-6:hover::before {
+  height: 0;
+}
+
+.description-grid-text {
+  padding: 1.2rem;
+  width: 26rem;
+  font-size: 1.2rem;
+}
+
+/* WALL OF TEMPLE CSS END */  
+
+/* PATTERN OF TEMPLE */
+
+.description-head-title-3 {
+  text-align: center;
+  font-size: calc(1.375rem + 1.5vw); 
+  padding: 3rem; 
+  color: white; 
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.description-fade-container {
+  position: relative;
+}
+
+.description-overlay {
+  position: absolute;
+  opacity: 0;
+  transition: all .3s ease;
+  background-color: #008cba;
+}
+
+.description-fade-container:hover .description-overlay {
+  opacity: 1;
+}
+
+.description-overlayLeft {
+  height: 100%;
+  width:0;
+  top:0;
+  left:0;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.description-fade-container:hover .description-overlayLeft {
+  width: 100%;
+}
+
+.description-text-fade { 
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem; 
+  color: white;
+  bottom: 0;
+  height: 30%;
+  width: 100% ;
+  opacity: 1;
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(111, 73, 162, 0.5);
+}
+
+.description-text-fade-2 {
+  font-size: 1.2rem;
+}
+
+/* PATTERN OF TEMPLE END */
+
+/* SYMBOL OF TEMPLE */
+.description-head-title-4 {
+  margin-top: 4rem;
+}
+
+.description-symbol-container {
+  margin-top: 9rem;
+}
+
+.description-linear-symbol,
+.description-linear-symbol-2,
+.description-linear-symbol-3 {
+  position: absolute;
+  width: 31%;
+  height: 105%;
+  /* height: 100%; */
+  top: -10%!important;
+  left: 17%;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-right: 0;
+} x
+
+.description-linear-symbol-2 {
+  width: 2%;
+  height: 10;
+  top: -10%!important;
+  left: 49%;
+}
+
+.description-linear-symbol-3 {
+  width: 2.5%;
+  height: 0;
+  top: -10%!important;
+  left: 52%!important;
+}
+
+
+.description-card-sm {
+  margin-left: 1.5rem;
+}
+
+.description-card-sm-1 {
+  margin-left: 20rem;
+}
+
+.description-card-sm-3 {
+  margin-right: 0.9rem;
+}
+
+.description-square-symbol-1,
+.description-square-symbol-2,
+.description-square-symbol-3 {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: -7%!important;
+  
+
+  background: rgba(111, 73, 162, 0.36);
+}
+.description-square-symbol-1 {
+  left: 64%!important;
+}
+
+.description-square-symbol-2 {
+  top: -7%!important;
+  left: 64%!important;
+}
+
+.description-square-symbol-3 {
+  top: -7%!important;
+  left: 63%!important;
+}
+
+.description-text-square-1,
+.description-text-square-2,
+.description-text-square-3 {
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size:calc(4.575rem + 1.5vw)!important;
+
+  top: 15%;
+  left: 0%;
+}
+
+.description-text-in,
+.description-text-in-2,
+.description-text-in-3 {
+  position: absolute;
+  color: white;
+  font-size: 3.5rem;
+  top: 80%;
+  left: 6%;
+}
+
+/* SYMBOL OF TEMPLE END */
+
+/* FOOTER */
+.description-footer-logo {
+  width: 15rem;
+}
+
+.description-footer-text {
+  font-size: 1rem;
+  color: white;
+}
+/* FOOTER END */
+
+/* RESPONSIVE */
+
+/* RESPONSIVE 1422px*/
+@media (max-width: 1422px) {
+  /* .description-head-title,
+  .description-head-title-2 {
+    font-size: 3.5rem!important;
+  }  */
+
+  /* description */
+  .description-linear-4 {
+    top: -15%!important;
+    height: 58%;
+  }
+
+  .description-linear-5 {
+    top: -15%!important;
+  }
+
+  .description-linear-6 {
+    top: -15%!important;
+  }
+}
+
+/* RESPONSIVE 1406px*/
+@media (max-width: 1406px) {
+  /* wall of temple */
+  .description-grid-item-1,
+  .description-grid-item-4,
+  .description-grid-item-5,
+  .description-grid-item-6 {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .description-grid-item-1::before, 
+  .description-grid-item-4::before,
+  .description-grid-item-5::before,
+  .description-grid-item-6::before {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+@media (max-width: 1291px) {
+  .description-grid-item-1,
+  .description-grid-item-4,
+  .description-grid-item-5,
+  .description-grid-item-6 {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .description-grid-item-1::before, 
+  .description-grid-item-4::before,
+  .description-grid-item-5::before,
+  .description-grid-item-6::before {
+    width: 23rem;
+    height: 23rem;
+  }
+}
+
+@media (max-width: 1225px) {
+  .description-grid-item-1,
+  .description-grid-item-4,
+  .description-grid-item-5,
+  .description-grid-item-6 {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .description-grid-item-1::before, 
+  .description-grid-item-4::before,
+  .description-grid-item-5::before,
+  .description-grid-item-6::before {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 1281px) {
+  /* description */
+  .description-linear-1 {
+    width: 57%;
+    height: 60%;
+    top: -18%!important;
+    left: 63%!important;
+  }
+
+  .description-linear-2 {
+    top: 44%!important;
+    left: 119.7%!important;
+  }
+
+  .description-linear-3 {
+    top: 49%!important;
+    left: 119.7%!important;
+  }
+
+  .description-title-img-1 {
+    left: 92%;
+  }
+
+  .description-linear-4 {
+    height: 50%;
+    left: -12%!important; 
+  }
+
+  .description-linear-5 {
+    left: 26%!important; 
+  }
+
+  .description-linear-6 {
+    left: 30%!important; 
+  }
+
+  .description-title-img-2{
+    left: -18%!important;
+  }
+
+  /* wall of temple 1280 */ 
+  .description-grid-text {
+    padding: 1.2rem;
+    width: 20rem;
+    font-size: 1rem;
+  } 
+
+  .description-text-square-1,
+  .description-text-square-2,
+  .description-text-square-3 {
+    font-size:calc(3.575rem + 1.5vw)!important;
+  }
+
+  .description-text-fade {
+    font-size: 1.1rem;
+  }
+}
+
+/* RESPONSIVE 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* description */
+  .description-img-1 {
+    width: 85rem;
+}
+
+  .description-linear-1 {
+    width: 50%;
+    height: 60%;
+    top: -18%!important;
+    left: 69%!important
+  }
+
+  .description-linear-2 {
+    top: 43%!important;
+    left: 118.7%!important
+  }
+
+  .description-linear-3 {
+    top: 47%!important;
+    left: 118.7%!important
+  }
+
+  .description-title-img-1 {
+    left: 87%;
+  }
+
+  .description-text-1 {
+    margin-left: 15%;
+  }
+
+  .description-linear-4 {
+    height: 45%;
+    left: -15%!important;
+  }
+
+  .description-linear-5 {
+    left: 24%!important;
+  }
+
+  .description-linear-6 {
+    left: 29%!important;
+  }
+
+  .description-title-img-2 {
+    left: -21.5%!important;
+  }
+
+  .description-text-2 {
+    margin-top: 10%;
+  }
+
+  /* wall of temple */
+  .description-grid {
+    gap: 2rem;
+  }
+
+  .description-grid-item-1,
+  .description-grid-item-4,
+  .description-grid-item-5,
+  .description-grid-item-6 {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .description-grid-item-1::before, 
+  .description-grid-item-4::before,
+  .description-grid-item-5::before,
+  .description-grid-item-6::before {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .description-grid > div > div:nth-of-type(1) {
+    font-size: 1.5rem!important;
+    margin-top: 1rem!important;
+    margin-bottom: 0!important;
+  }
+
+  .description-grid-text {
+    padding: 1.2rem;
+    width: 18rem;
+    font-size: 0.9rem;
+  }
+
+  /* pattern of temple */
+  .description-text-fade {
+    font-size: 1rem;
+  }
+
+  .description-text-fade-2 {
+    font-size: .9rem;
+  }
+
+  /* symbol of temple */
+  .description-symbol-container {
+    margin-top: 6rem;
+  }
+
+  .description-linear-symbol,
+  .description-linear-symbol-2,
+  .description-linear-symbol-3 {
+    width: 23%;
+    left: 19%;
+  }
+
+  .description-linear-symbol-2 {
+    width: 2%;
+    left: 43%;
+  }
+
+  .description-linear-symbol-3 {
+    width: 2.5%;
+    left: 46%!important;
+  }
+
+  .description-text-square-1,
+  .description-text-square-2,
+  .description-text-square-3 {
+    font-size:calc(2.575rem + 1.5vw)!important;
+  }
+
+  .description-card-sm-1 {
+    margin-left: 15rem;
+  }
+
+  .description-text-in,
+  .description-text-in-2,
+  .description-text-in-3 {
+    font-size:calc(1.575rem + 1.5vw);
+  }
+}
+
+@media (max-width: 768px) {
+  /* description */
+  .description-linear-1 {
+    width: 57%;
+    height: 50%;
+    left: 61%!important
+  }
+
+  .description-linear-2 {
+    top: 34%!important;
+    left: 117.7%!important
+  }
+
+  .description-linear-3 {
+    top: 39%!important;
+    left: 117.7%!important
+  }
+
+  .description-title-img-1 {
+    font-size: calc(.875rem + 1.5vw)!important;
+    left: 90%;
+  }
+
+  .description-text-1 {
+    margin-left: 17%;
+  }
+
+  .description-linear-4 {
+    height: 30%;
+    left: -15%!important;
+  }
+
+  .description-linear-5 {
+    left: 24%!important;
+  }
+
+  .description-linear-6 {
+    left: 29%!important;
+  }
+
+  .description-title-img-2 {
+    font-size: calc(.875rem + 1.5vw)!important;
+    left: -19%!important;
+  }
+
+  /* wall of temple */
+  .description-grid {
+    gap: 2rem;
+  }
+
+  .description-grid-item-1,
+  .description-grid-item-4,
+  .description-grid-item-5,
+  .description-grid-item-6 {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .description-grid-item-1::before, 
+  .description-grid-item-4::before,
+  .description-grid-item-5::before,
+  .description-grid-item-6::before {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .description-grid > div > div:nth-of-type(1) {
+    font-size: 1rem!important;
+    margin-top: 1rem!important;
+    margin-bottom: 0!important;
+  }
+
+  .description-grid-text {
+    padding: 0.5rem;
+    width: 13rem;
+    font-size: 0.7rem;
+  }
+
+  /* pattern of temple */
+  .description-head-title-3 {
+    padding: 4rem;
+  }
+
+  .description-text-fade {
+    font-size: 0.6rem;
+  }
+
+  .description-text-fade-2 {
+    font-size: .6rem;
+  }
+
+  /* symbol of temple */
+  .description-head-title-4 {
+    margin-top: 2rem;
+  }
+
+  .description-symbol-container {
+    margin-top: 4rem;
+  }
+
+  .description-linear-symbol,
+  .description-linear-symbol-2,
+  .description-linear-symbol-3 {
+    width: 23%;
+    left: 19%;
+  }
+
+  .description-linear-symbol-2 {
+    width: 2%;
+    height: 0;
+    left: 43%;
+  }
+
+  .description-linear-symbol-3 {
+    width: 2.5%;
+    left: 46%!important;
+  }
+
+  .description-card-sm-1 {
+    margin-left: 24%;
+  }
+
+  .description-text-square-1,
+  .description-text-square-2,
+  .description-text-square-3 {
+    font-size:calc(1.475rem + 1.5vw)!important;
+  }
+
+  .description-text-in,
+  .description-text-in-2,
+  .description-text-in-3 {
+    font-size:calc(.675rem + 1.5vw);
+  }
+
+  /* footer */
+  .description-footer-logo {
+    width: 10rem;
+  }
+
+  .description-footer-text {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .description-head-title {
+    font-size: calc(.975rem + 1.5vw)!important;
+  }
+
+  .description-img-1 {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description-head-title{
+    font-size: 3rem!important;
+  } 
+  .description-head-title-2,
+  .description-head-title-3 {
+    font-size: 2rem!important;
+  }
+}
+

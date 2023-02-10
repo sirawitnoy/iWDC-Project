@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* DESCRIPTION CSS */
+.description-head-title {
+  text-align: center;
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.description-img-1 {
+  width: 120rem;
+}
+.description-title-img-1 {
+  transform: rotate(90deg);
+  font-size:calc(1.375rem + 1.5vw)!important;
+  top: 6rem;
+  left: 52rem;
+}
+
+.description-title-img-2 {
+  transform: rotate(90deg);
+  top: 6rem!important;
+  left: -17rem!important;
+
+  margin-right: auto;
+
+  font-size:calc(1.375rem + 1.6vw)!important;
+}
+
+.description-linear-1 {
+  position: absolute;
+  width: 30rem;
+  height: 26rem;
+  /* height: 100%; */
+  top: -8rem!important;
+  left: 40rem!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-left: 0 ;
+}
+
+.description-linear-2,
+.description-linear-3 {
+  position: absolute;
+  height: 1.5rem;
+
+  left: 69.9rem!important;
+
+  border: 2px solid #000000;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0 ;
+
+}
+
+.description-linear-2 {
+  top: 18.5rem!important;
+}
+
+.description-linear-3 {
+  top: 20.5rem!important;
+}
+
+.description-linear-4 {
+  position: absolute;
+  width: 19rem;
+  height: 20rem;
+
+  top: -5.4rem!important;
+  left: -20.5rem!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.description-linear-5,
+.description-linear-6 {
+  position: absolute;
+  width: 1.5rem;
+  top: -5.4rem!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-left: 0 ;
+  border-right: 0;
+}
+
+.description-linear-5 {
+  left: -1rem;
+}
+
+.description-linear-6 {  
+  left: 1rem;
+}
+.description-square-1 {
+  /* width: 14rem; */
+  width: 20%;
+  height: 20%;
+  top: 20%!important;
+  left: 20%!important;
+
+  background: rgba(111, 73, 162, 0.36);
+}
+
+.description-square-2 {
+  width: 18rem;
+  height: 5rem;
+
+  top: 38rem!important;
+
+  background: rgba(221, 25, 83, 0.2);
+}
+
+.description-square-3 {
+  width: 10rem;
+  height: 8rem;
+  top: -3.5rem!important;
+  left: 44.7rem!important;
+
+  background: rgba(221, 25, 83, 0.2);
+}
+
+.description-square-4 {
+  width: 23rem;
+  height: 8rem;
+  top: 29rem!important;
+  left: -4rem!important;
+
+  background: rgba(111, 73, 162, 0.36);
+}
+.description-text-1,
+.description-text-2 { 
+  font-size:calc(0.325rem + 1vw)!important;
+}
+
+.description-text-1 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.description-text-2 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.description-text-vertical {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+/* DESCRIPTION CSS END */
+
+/* WALL OF TEMPLE CSS */
+
+.description-head-title-2 {
+  text-align: center;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: bold;
+  margin-top: 7rem; 
+  padding: 6rem; 
+  color: white; 
+  background-image: url('../img/wall-of-temple-bg.png');
+}
+
+.description-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.description-grid-item-1,
+.description-grid-item-4,
+.description-grid-item-5,
+.description-grid-item-6 {
+  width: 26rem;
+  height: 26rem;
+  background: rgba(221, 25, 83, 0.5);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.description-grid-item-1::before,
+.description-grid-item-4::before,
+.description-grid-item-5::before,
+.description-grid-item-6::before {
+  content: "";
+  position: absolute;
+  border-radius: 2%;
+  width: 26rem;
+  height: 26rem;
+  transition: all .5s;
+  z-index: 1;
+  background-size: cover;
+}
+
+.description-grid-item-1::before {
+  background-image: url('../img/wall-grid-4.png');
+}
+
+.description-grid-item-4::before {
+  background-image: url('../img/wall-grid-4.png');
+}
+
+.description-grid-item-5::before {
+  background-image: url('../img/wall-grid-5.png');
+}
+
+.description-grid-item-6::before {
+  background-image: url('../img/wall-grid-6.png');
+}
+
+.description-grid-item-1:hover::before,
+.description-grid-item-4:hover::before,
+.description-grid-item-5:hover::before,
+.description-grid-item-6:hover::before {
+  height: 0;
+}
+
+.description-grid-text {
+  padding: 1.2rem;
+  width: 26rem;
+  font-size: 1.2rem;
+}
+
+/* WALL OF TEMPLE CSS END */  
+
+/* PATTERN OF TEMPLE */
+
+.description-head-title-3 {
+  text-align: center;
+  font-size: calc(1.375rem + 1.5vw); 
+  padding: 6rem; 
+  color: white; 
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.description-fade-container {
+  position: relative;
+}
+
+.description-overlay {
+  position: absolute;
+  opacity: 0;
+  transition: all .3s ease;
+  background-color: #008cba;
+}
+
+.description-fade-container:hover .description-overlay {
+  opacity: 1;
+}
+
+.description-overlayLeft {
+  height: 100%;
+  width:0;
+  top:0;
+  left:0;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.description-fade-container:hover .description-overlayLeft {
+  width: 100%;
+}
+
+.description-text-fade { 
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.5rem; 
+  color: white;
+  bottom: 0;
+  height: 30%;
+  width: 100% ;
+  opacity: 1;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(111, 73, 162, 0.5);
+}
+
+/* PATTERN OF TEMPLE END */
+
+/* SYMBOL OF TEMPLE */
+
+
+.description-linear-symbol,
+.description-linear-symbol-2,
+.description-linear-symbol-3 {
+  position: absolute;
+  width: 30rem;
+  height: 47rem;
+  /* height: 100%; */
+  top: -5.5rem!important;
+  left: 16rem!important;
+
+  border: 2px solid #000000;
+  border-bottom: 0;
+  border-right: 0;
+} 
+
+.description-linear-symbol-2 {
+  width: 2rem;
+  height: 0;
+  top: -5.5rem!important;
+  left: 47rem!important;
+}
+
+.description-linear-symbol-3 {
+  width: 2.5rem;
+  height: 0;
+  top: -5.5rem!important;
+  left: 50rem!important;
+}
+
+
+.description-card-sm {
+  margin-left: 1.5rem;
+}
+
+.description-square-symbol-1,
+.description-square-symbol-2,
+.description-square-symbol-3 {
+  position: absolute;
+  width: 10rem;
+  height: 20rem;
+  top: -3rem!important;
+  left: 35rem!important;
+
+  background: rgba(111, 73, 162, 0.36);
+}
+
+.description-square-symbol-2 {
+  top: -3rem!important;
+  left: 60.5rem!important;
+}
+
+.description-square-symbol-3 {
+  top: -3rem!important;
+  left: 84.7rem!important;
+}
+
+.description-text-square-1,
+.description-text-square-2,
+.description-text-square-3 {
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size:calc(4.575rem + 1.5vw)!important;
+
+  top: 3rem;
+  left: 1rem;
+}
+
+.description-text-in,
+.description-text-in-2,
+.description-text-in-3 {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  top: 27rem;
+  left: 22rem;
+}
+
+.description-text-in-2 {
+  top: 27rem;
+  left: 47rem;
+}
+
+.description-text-in-3 {
+  top: 27rem;
+  left: 73rem;
+}
+
+/* SYMBOL OF TEMPLE END */
+
+
+/* RESPONSIVE MOBILE */
+
+@media (min-width: 1200px) {
+  .description-head-title,
+  .description-head-title-2 {
+    font-size: 3.5rem!important;
+  } 
+}
+
