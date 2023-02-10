@@ -294,7 +294,7 @@
 
 /* SYMBOL OF TEMPLE */
 .description-head-title-4 {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .description-symbol-container {
@@ -355,7 +355,7 @@
   background: rgba(111, 73, 162, 0.36);
 }
 .description-square-symbol-1 {
-  left: 64%!important;
+  left: 63%!important;
 }
 
 .description-square-symbol-2 {
@@ -638,7 +638,7 @@
 
   /* symbol of temple */
   .description-symbol-container {
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
 
   .description-linear-symbol,
@@ -835,8 +835,9 @@
     font-size: 3rem!important;
   } 
   .description-head-title-2,
-  .description-head-title-3 {
-    font-size: 2rem!important;
+  .description-head-title-3,
+  .description-head-title-4 {
+    font-size: 2.5rem!important;
   }
 }
 
