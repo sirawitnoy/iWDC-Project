@@ -11,13 +11,17 @@
 }
 
 .description-img-1 {
-  width: 111rem;
+  width: 82rem;
+}
+
+.description-img-2 {
+  width: 128rem;
 }
 .description-title-img-1 {
   transform: rotate(90deg);
-  font-size:calc(1.375rem + 1.5vw)!important;
-  top: 14%;
-  left: 95%;
+  font-size: 35px!important;
+  top: 28%;
+  left: 102.6%;
 }
 
 .description-title-img-2 {
@@ -32,36 +36,33 @@
 
 .description-linear-1 {
   position: absolute;
-  width: 55%;
-  height: 65%;
-  top: -20%!important;
-  left: 70%!important;
-
+  width: 63%;
+  height: 46%;
+  top: -6%!important;
+  left: 78%!important;
   border: 2px solid #000000;
   border-bottom: 0;
-  border-left: 0 ;
+  border-left: 0;
 }
 
 .description-linear-2,
 .description-linear-3 {
   position: absolute;
-  height: 3%;
-
-  left: 124.8%!important;
-
+  height: 6%;
+  left: 140.8%!important;
   border: 2px solid #000000;
   border-top: 0;
   border-bottom: 0;
-  border-left: 0 ;
-
+  border-left: 0;
 }
 
 .description-linear-2 {
-  top: 47%!important;
+  top: 42%!important;
+  height: 10%;
 }
 
 .description-linear-3 {
-  top: 52%!important;
+  top: 54%!important;
 }
 
 .description-linear-4 {
@@ -90,17 +91,19 @@
 }
 
 .description-linear-5 {
-  left: 8%;
+  left: 9%;
+  width: 10%;
 }
 
 .description-linear-6 {  
-  left: 12%;
+  left: 20%;
+  width: 6%;
 }
 .description-square-1 {
   width: 22%;
   height: 60%;
-  top: -10%!important;
-  left: 81%!important;
+  top: -4%!important;
+  left: 83%!important;
 
   background: rgba(111, 73, 162, 0.36);
 }
@@ -158,10 +161,10 @@
 .description-head-title-2 {
   text-align: center;
   font-size: calc(1.375rem + 1vw);
-  font-weight: bold;
   margin-top: 8%; 
+  font-weight: bold;
   margin-bottom: 0;
-  padding: 3%; 
+  padding: 5%; 
   color: white; 
   filter: grayscale(10%);
   background-image: url('../img/wall-of-temple-bg.png');
@@ -186,6 +189,10 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   overflow: hidden;
+}
+
+.description-grid-item-1 {
+  background-color: rgba(111, 73, 162, 0.5);
 }
 
 .description-grid-item-1::before,
@@ -237,7 +244,8 @@
 
 .description-head-title-3 {
   text-align: center;
-  font-size: calc(1.375rem + 1.5vw); 
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: bold; 
   padding: 3rem; 
   color: white; 
   background-color: black;
@@ -272,13 +280,12 @@
 }
 
 .description-text-fade { 
-  text-align: left;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.2rem; 
   color: white;
   bottom: 0;
   height: 30%;
-  width: 100% ;
+  width: 100%;
   opacity: 1;
   z-index: 2;
   text-align: center;
@@ -295,6 +302,7 @@
 /* SYMBOL OF TEMPLE */
 .description-head-title-4 {
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 .description-symbol-container {
@@ -305,29 +313,29 @@
 .description-linear-symbol-2,
 .description-linear-symbol-3 {
   position: absolute;
-  width: 31%;
-  height: 105%;
+  width: 30rem;
+  height: 35rem;
   /* height: 100%; */
-  top: -10%!important;
-  left: 17%;
+  top: 291rem!important;
+  left: 16%;
 
   border: 2px solid #000000;
   border-bottom: 0;
   border-right: 0;
-} x
+}
 
 .description-linear-symbol-2 {
-  width: 2%;
-  height: 10;
-  top: -10%!important;
-  left: 49%;
+  width: 17%;
+  height: 0;
+  top: -0.3%!important;
+  left: 103%;
 }
 
 .description-linear-symbol-3 {
-  width: 2.5%;
+  width: 9.5%;
   height: 0;
-  top: -10%!important;
-  left: 52%!important;
+  top: -0.3%!important;
+  left: 123%!important;
 }
 
 
@@ -831,13 +839,11 @@
 }
 
 @media (min-width: 1200px) {
-  .description-head-title{
-    font-size: 3rem!important;
-  } 
+  .description-head-title,
   .description-head-title-2,
   .description-head-title-3,
   .description-head-title-4 {
-    font-size: 2.5rem!important;
+    font-size: 3rem!important;
   }
 }
 
