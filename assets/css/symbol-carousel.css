@@ -96,10 +96,15 @@
     margin-right: 0;
   }
 
+  .swiper-navBtn::before,
+ .swiper-navBtn::after{
+   font-size: 0;
+ }
+
   .description-linear-symbol, .description-linear-symbol-2, .description-linear-symbol-3 {
     height: 37rem;
     width: 9rem;
-    top: 344rem!important;
+    top: 344.5rem!important;
     left: 18%;
   }
   .description-linear-symbol-2 {
@@ -170,10 +175,10 @@
 
   .description-linear-symbol-jp
    {
-    top: 329rem!important;
+    top: 338rem!important;
   }
 
   .description-linear-symbol-th {
-    top: 326rem!important;
+    top: 335.6rem!important;
   }
  }

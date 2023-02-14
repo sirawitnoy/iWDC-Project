@@ -435,7 +435,7 @@
 }
 
 .description-linear-symbol-th {
-  top: 295rem!important;
+  top: 310rem!important;
 }
 
 .description-linear-symbol-jp {
@@ -553,11 +553,11 @@
 }
 
 .description-text-in {
-  left: 9.8rem!important;
+  left: 9rem!important;
 }
 
 .description-text-in-3 {
-  left: 36%;
+  left: 36%!important;
 }
 
 .description-text-in-4 {
@@ -565,11 +565,11 @@
 }
 
 .description-text-in-5 {
-  left: 31%;
+  left: 28%;
 }
 
 .description-text-in-6 {
-  left: 7rem;
+  left: 6.8rem!important;
 }
 
 /* thai */
@@ -1031,7 +1031,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .description-head-title {
     font-size: calc(2.575rem + 1.5vw)!important;
   }
@@ -1146,7 +1146,7 @@
     opacity: 1;
     width: 7rem;
     height: 16rem;
-    top: 14.8rem;
+    top: 14.4rem;
     left: 15.5rem;
     border: 1.6px solid;
     border-left: 0;
@@ -1169,10 +1169,6 @@
     padding: 2rem;
     background-position: 1rem;
     background-image: url(../img/wall-of-temple-bg-mobile.png);
-  }
-
-  .description-linear-symbol, .description-linear-symbol-2, .description-linear-symbol-3 {
-    top: 250rem!important;
   }
 
   /* wall of temple */

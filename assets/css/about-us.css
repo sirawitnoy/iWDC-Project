@@ -155,7 +155,7 @@ body {
 
 @media screen and (max-width: 425px) {
   .more-stuff-grid {
-    background: #f4f4f4;
+    background: white;
     padding: 2em 0;
     display: grid;
     grid-gap: 1em;
