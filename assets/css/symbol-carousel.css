@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+ 
+  * {
+    font-family: Mitr;
+  }
+
  .slide-container{
    max-width: 1250px;
    width: 100%;
@@ -18,7 +24,7 @@
  .card-content{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: start;
    padding: 10px 14px;
  }
  .image-content{
@@ -41,9 +47,13 @@
  }
  .description{
    font-size: 17px;
-   color: #707070;
+   color: black;
    text-align: start;
  }
+
+ /* thai */
+
+  
  .swiper-navBtn{
    color: black;
    transition: color 0.3s ease;
@@ -74,6 +84,96 @@
      margin: 0 10px;
    }
    .swiper-navBtn{
-     display: none;
+     display: true;
    }
+ }
+
+ @media screen and (max-width: 425px) {
+  .slide-container{
+    max-width: 1250px;
+    width: 80%;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  .description-linear-symbol, .description-linear-symbol-2, .description-linear-symbol-3 {
+    height: 37rem;
+    width: 9rem;
+    top: 344rem!important;
+    left: 18%;
+  }
+  .description-linear-symbol-2 {
+    width: 3rem;
+    top: -0.1rem!important;
+    left: 103%;
+    height: 0;
+  }
+
+  .description-linear-symbol-3 {
+    top: -0.1rem!important;
+    left: 140%!important;
+    height: 0;
+    width: 1.5rem;
+  }
+
+  .description-text-square-1, .description-text-square-2, .description-text-square-3 {
+    top: 2.7rem;
+    font-size: calc(1.475rem + 10.5vw)!important;
+  }
+
+  .description-text-in, .description-text-in-2, .description-text-in-3,
+  .description-text-in-4,
+  .description-text-in-5,
+  .description-text-in-6 {
+    font-size: calc(0.75rem + 1.5vw);
+    top: 21.1rem;
+    left: 1.6rem!important;
+  }
+
+  .description-text-in {
+    left: 7rem!important;
+  }
+
+  .description-text-in-th {
+    left: 7.5rem!important;
+  }
+
+  .description-text-in-th-2 {
+    left: 4rem!important;
+  }
+
+  .description-text-in-th-4 {
+    left: 6rem!important;
+  }
+
+  
+
+  .description-text-in-3 {
+    left: 6rem!important;
+  }
+
+  .description-text-in-5 {
+    left: 5.3rem!important;
+  }
+
+  .description-text-in-th-5 {
+    left: 6.6rem!important; 
+  }
+
+  .description-text-in-6 {
+    left: 5.1rem!important;
+  }
+
+  .description-text-in-th-6 {
+    left: 5.3rem!important;
+  }
+
+  .description-linear-symbol-jp
+   {
+    top: 329rem!important;
+  }
+
+  .description-linear-symbol-th {
+    top: 326rem!important;
+  }
  }

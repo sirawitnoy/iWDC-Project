@@ -1,0 +1,194 @@
+/*header*/
+body{
+    margin-top: 0;
+}
+.header-container{
+    margin: 30px;
+    display: flex;
+    height: 95px;
+}
+.header-img-1{
+    z-index: 999;
+    width: 15%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px #000);
+
+}
+.header-img-2{
+    width: 55%;
+    height: auto;
+    margin-top: -22px;
+}
+/*-----hamburger menu-----*/
+#header-nav{
+    position:fixed;
+    z-index: 999;
+    /*nav start position and form*/
+    top:-120%;
+    left:0;
+    width:100%;
+    height: 100vh;/*nav hight*/
+    background: #FDF3FF;
+    /*move*/
+    transition: all 0.6s;
+}
+#header-nav ul{
+    margin-top: 30px;
+}
+#header-nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#header-nav.panelactive{
+    top: 0;
+}
+
+/*navigation*/
+#header-nav .hamburger-menu{
+    position: absolute;
+    z-index: 999;
+    top: 300px;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    margin-top: -10px;
+}
+
+/*list layout*/
+
+#header-nav li{
+    list-style: none;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 150%;
+}
+
+#header-nav li a{
+    text-decoration: none;
+    padding:10px;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/*hamburger menu open logo*/
+#header-nav .hamburger-menu li{
+    margin-bottom: 50px;	
+}
+
+/*========= button ===============*/
+.header-openbtn{
+    position:fixed;
+    z-index: 9999;
+    right: 10px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    top: 5px;
+}
+
+.header-openbtn span{
+    z-index: 9999;
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    margin-top: 10px;
+    left: 17px;
+    height: 2px;
+    border-radius: 2px;
+    width: 50%;
+    filter: drop-shadow(0px 0px 3px #000);
+}
+.header-white{
+    background-color: #fff;
+}
+.header-black{
+    background-color: #000;
+}
+.header-openbtn span:nth-of-type(1) {
+    top:25px;	
+}
+
+.header-openbtn span:nth-of-type(2) {
+    top:33px;
+}
+
+.header-openbtn span:nth-of-type(3) {
+    top:41px;
+}
+
+/*×*/	
+.header-openbtn.active span:nth-of-type(1) {
+    top: 20px;
+    left: 20px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+    background-color: #000;
+}   
+
+.header-openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.header-openbtn.active span:nth-of-type(3){
+    top: 32px;
+    left: 20px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+    background-color: #000;
+}
+/*↑ hamburger menu*/
+/*↓ Change language*/
+.header-change-language{
+    font-size: 12px;
+    width: 25vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    position: relative;
+    top: 530px;
+}
+
+/*↑ Change language*/
+
+@media (max-width: 799px){
+    h1, .header-hamburger{
+        margin-top: -10px;
+    }
+    .header-img-1{
+        z-index: 999;
+        width: 35%;
+        height: auto;
+    
+    }
+    .header-img-2{
+        width: 77%;
+        margin-top: 0;
+        margin-left: -261px;
+    }
+    #header-nav .hamburger-menu{
+        top: 270px;
+        margin-left: -10px;
+    }
+    #header-nav .hamburger-menu li:nth-of-type(1) {
+        margin-bottom: 50px;
+        margin-left: 30%;
+    }
+    #header-nav .hamburger-menu li{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    /*↓ Change language*/
+    .header-change-language{
+        position: relative;
+        top: 680px;
+        padding: 0;
+        width: 100vw;
+    }
+
+    /*↑ Change language*/
+}

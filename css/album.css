@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+* {
+  font-family: Mitr;
+}
+
+body{
+    color: #000;
+    margin: 0;
+}
+
+.album-section-1{
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin-top: -155px;
+  margin-bottom: 5%;
+}
+
+ul{
+  list-style: none;
+}
+
+.album-div-1{
+  overflow: hidden;
+  height: 10%;
+  z-index: -1;
+}
+
+/*Top image*/
+.album-ul-1{
+  padding: 0;
+  margin: 0;
+}
+.album-li-img img{
+  width: 100vw;
+  height: auto;
+}
+
+.slick-vartical .slickslide{
+  border: none;
+}
+
+.album-div-2{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: -35%;
+}
+.album-section-1 h2{
+  font-weight: normal;
+  position:initial;
+  font-size: 350%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/*photo area*/
+.album-ul-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.album-li{
+  margin-bottom: 60px;
+}
+.album-div-3 img{
+    width: 70%;
+    height: auto;
+    margin-left: 17%;
+    margin-top: 10%;
+}
+.modal-block {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.modal-block .img-section {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.modal-block .img-section span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.modal-block .img-section span::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+.modal-block .img-section img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.modal-block .caption {
+    font-size: 20px;
+    letter-spacing: 0.09em;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+@media (max-width: 799px){
+  .album-ul-1{
+    height: 100vh;
+  }
+  .album-ul-2{
+    grid-template-columns: 1fr;
+  }
+  .album-li-img img{
+    width: fit-content;
+    height: 100vh;
+  }
+  .album-li-1{
+    margin-left: -570px;
+  }
+  .album-li-2{
+    margin-left: -390px;
+  }
+
+  .album-div-2{
+    margin-top: -130%;
+  }
+  
+}

@@ -1,0 +1,134 @@
+/*Home images*/
+body{
+    color: #000;
+    margin: 0;
+    font-family: 'Mitr', sans-serif;
+}
+.index-images{
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    margin-top: -155px;
+}
+.index-div-1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.index-ul-1, .index-ul-2{
+    width: 50vw;
+}
+.index-ul-1{
+    margin-left: -10px;
+}
+.index-ul-2{
+    margin-left: -40px;
+}
+
+.index-li{
+    width: 50%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+/*Wat arun*/
+.index-ul-1-li-1{
+    background-image: url(../images/index-thailand-1.JPG);
+}
+.index-ul-1-li-2{
+    background-image: url(../images/index-thailand-2.jpg);
+}
+/*Wat arun*/
+
+/*Hokkaido jingu*/
+.index-ul-2-li-1{
+    background-image: url(../images/index-hokkaido-1.jpg);
+}
+.index-ul-2-li-2{
+    background-image: url(../images/index-hokkaido-2.jpg);
+}
+/*Hokkaido jingu*/
+.index-ul-1 .slick-list{
+    width: 50vw;
+    margin-left: -40px;
+}
+
+.index-ul-2 .slick-list{
+    width: 50vw;
+}
+/*↑Home images*/
+
+/*text*/
+.index-images h2 {
+    z-index: 100;
+    font-size: 200%;
+    top: 200px;
+    filter: drop-shadow(0px 0px 4px #000);
+}
+.index-h2s{
+    display: flex;
+    width: 110px;
+    align-content: center;
+    position: absolute;
+    color: #fff;
+    margin-left: -20px;
+}
+.index-h2-1{
+    writing-mode: vertical-rl;
+}
+.index-h2-2{
+    writing-mode: vertical-lr;
+    transform :translate(100%) rotate(180deg);
+    margin-left: -35px;
+}
+/*text*/
+
+@media (max-width: 799px){
+    /*Top image*/
+    .index-div-1{
+        grid-template-columns: 1fr;
+        width: max-content;
+    }
+    .index-div-1 ul{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    .index-ul-1 .slick-list, .index-ul-2 .slick-list{
+        width: 100vw;
+        height: 50vh;
+        margin: 0;
+    }
+    .index-li{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: top;
+    }
+    /*Top image*/
+    /*text*/
+    .index-h2s{
+        width: 110vw;
+        position: absolute;
+        color: #fff;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .index-h2-1{
+        margin-top: 40vh;
+    }
+    .index-h2-2{
+        margin-top: -25vh;
+        margin-left: -5%;
+    }
+    /*text*/
+}
